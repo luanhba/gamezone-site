@@ -3,65 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamezone | Contatos</title>
+    <title>Gamezone - Contatos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="topo">
-        <div class="logo" aria-label="Gamezone">
-            <span class="brand-mark">G</span>
-            <span class="brand-text">Gamezone</span>
+    <div class="topo">
+        <div class="logo">
+            <span class="bolinha">G</span>
+            <span>Gamezone</span>
         </div>
 
-        <nav aria-label="Navegação principal">
-            <a href="./index.html">Home</a>
-            <a href="./quemsomos.html">Quem Somos</a>
-            <a href="#">Contatos</a>
-        </nav>
-    </header>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </div>
 
-    <main class="pagina">
-        <section class="hero-contato">
-            <div class="texto">
-                <p class="tag">Fale com a gente</p>
-                <h1>Contato</h1>
-                <p>Estamos prontos para responder perguntas, oferecer suporte e ajudar você a encontrar os melhores produtos e promoções.</p>
-            </div>
-        </section>
+    <div class="titulo-pagina">
+        <h1>Contato</h1>
+    </div>
 
-        <section class="conteudo-contato">
-            <div class="info-contato">
-                <div class="card-contato">
-                    <h3>WhatsApp</h3>
-                    <p>(11) 99999-0000</p>
-                </div>
+    <div class="conteudo-pagina">
+        <div class="caixa">
+            <h3>WhatsApp</h3>
+            <p>(11) 99999-0000</p>
+        </div>
 
-                <div class="card-contato">
-                    <h3>E-mail</h3>
-                    <p>contato@gamezone.com.br</p>
-                </div>
+        <div class="caixa">
+            <h3>E-mail</h3>
+            <p>contato@gamezone.com.br</p>
+        </div>
 
-                <div class="card-contato">
-                    <h3>Endereço</h3>
-                    <p>Rua das Games, 123 - São Paulo/SP</p>
-                </div>
-            </div>
+        <div class="caixa">
+            <h3>Endereço</h3>
+            <p>Rua das Games, 123 - São Paulo/SP</p>
+        </div>
 
-            <form class="formulario">
-                <h2>Envie uma mensagem</h2>
+        <div class="formulario">
+            <h2>Envie uma mensagem</h2>
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome">
 
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            <label>E-mail</label>
+            <input type="email" placeholder="Seu e-mail">
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Seu e-mail">
+            <label>Mensagem</label>
+            <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
 
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+            <button>Enviar</button>
+        </div>
+    </div>
 </body>
 </html>
