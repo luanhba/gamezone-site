@@ -7,49 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="topo">
-        <div class="logo" aria-label="Gamezone">
-            <span class="brand-mark">G</span>
-            <span class="brand-text">Gamezone</span>
+    <div class="topo">
+        <div class="logo">
+            <span class="bolinha">G</span>
+            <span>Gamezone</span>
         </div>
 
-        <nav aria-label="Navegação principal">
-            <a href="#">Home</a>
-            <a href="./quemsomos.html">Quem Somos</a>
-            <a href="./contatos.html">Contatos</a>
-        </nav>
-    </header>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </div>
 
-    <main class="hero">
-        <div class="hero-content">
-            <h1>Gamezone</h1>
-            <p>A sua loja de jogos favorita</p>
-            <p>Com os melhores preços do mercado</p>
-            <button type="button">Venha nos conhecer</button>
+    <div class="banner">
+        <h1>Gamezone</h1>
+        <p>A sua loja de jogos favorita</p>
+        <p>Com os melhores preços</p>
+        <button>Venha nos conhecer</button>
+    </div>
+
+    <div class="produtos">
+        <div class="produto">
+            <img src="dispatch.png" alt="Dispatch">
+            <h3>Dispatch</h3>
+            <p>R$ 89,90</p>
+            <button>Comprar</button>
         </div>
-    </main>
 
-<section class="promocoes">
-  <article class="card">
-    <img src="dispatch.png" alt="Jogo em promoção">
-    <h3>Dispatch</h3>
-    <p>R$ 89,90</p>
-    <button>Comprar</button>
-  </article>
+        <div class="produto">
+            <img src="pc.png" alt="Computador gamer">
+            <h3>Computador Gamer</h3>
+            <p>R$ 3.499,00</p>
+            <button>Comprar</button>
+        </div>
 
-  <article class="card">
-    <img src="pc.png" alt="Computador em promoção">
-    <h3>Computador Gamer</h3>
-    <p>R$ 3.499,00</p>
-    <button>Comprar</button>
-  </article>
-
-  <article class="card">
-    <img src="xbox.png" alt="Outro jogo em promoção">
-    <h3>Console + Jogo</h3>
-    <p>R$ 2.199,00</p>
-    <button>Comprar</button>
-  </article>
-</section>
+        <div class="produto">
+            <img src="xbox.png" alt="Console">
+            <h3>Console + Jogo</h3>
+            <p>R$ 2.199,00</p>
+            <button>Comprar</button>
+        </div>
+    </div>
 </body>
 </html>
