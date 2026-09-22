@@ -7,131 +7,115 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(gamezone2.png);
+    color: #222;
 }
 
-.topo {
-    width: 1000px;
-    margin: 0 auto;
-    background: #2a2a2a;
-    color: white;
-    padding: 20px;
-    border-bottom: 5px solid #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 40px;
+.navbar {
+    background: #2b2b2b;
+    border-bottom: 4px solid #000;
 }
 
 .bolinha {
     background: purple;
     color: white;
     padding: 8px 12px;
-    border-radius: 10px;
-    margin-right: 10px;
+    border-radius: 8px;
     display: inline-block;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 15px;
-}
-
-.menu li {
-    line-height: 40px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
     font-weight: bold;
 }
 
-.banner {
-    width: 1000px;
-    margin: 20px auto;
+.banner-principal {
     background: #4a4a4a;
     color: white;
     padding: 30px;
-    border: 3px solid black;
+    border: 3px solid #000;
+    border-radius: 0;
+    box-shadow: 4px 4px 0 #000;
 }
 
-.banner h1 {
+.banner-principal h1 {
     font-size: 50px;
     margin: 0;
     color: yellow;
 }
 
-.banner p {
+.banner-principal p {
+    margin: 8px 0;
     font-size: 20px;
-    margin: 10px 0;
 }
 
-button {
-    background: purple;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+.card-banner {
+    border: 2px solid #999;
+    background: white;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: 4px 4px 0 #999;
+}
+
+.banner-imagem {
+    position: relative;
+    height: 240px;
+}
+
+.banner-imagem img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
     border-radius: 8px;
+}
+
+.banner-imagem img.active {
+    opacity: 1;
+}
+
+.box-info,
+.produto-card,
+.box-texto,
+.form-card {
+    border: 2px solid #999;
+    border-radius: 0;
+    background: white;
+    box-shadow: 4px 4px 0 #bdbdbd;
+}
+
+.box-info h3,
+.produto-card h3,
+.box-texto h2,
+.box-texto h3,
+.form-card h2 {
+    color: #222;
     margin-top: 10px;
 }
 
-.produtos {
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.produto-card img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #999;
 }
 
-.produto {
-    width: 300px;
-    background: white;
-    border: 2px solid #999;
-    padding: 10px;
-    text-align: center;
+.produto-card p {
+    font-weight: bold;
+    color: purple;
+    margin: 10px 0;
+}
+
+.titulo-secao {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111;
     margin-bottom: 20px;
 }
 
-.produto img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border: 1px solid #999;
-}
-
-.produto h3 {
-    margin: 15px 0 10px 0;
-    color: #222;
-}
-
-.produto p {
-    font-weight: bold;
-    color: purple;
-    margin: 0 0 10px 0;
-}
-
 .titulo-pagina {
-    width: 1000px;
-    margin: 20px auto 0 auto;
     background: #444;
     color: white;
     padding: 20px;
-    border: 3px solid black;
+    border: 3px solid #000;
+    border-radius: 10px;
 }
 
 .titulo-pagina h1 {
@@ -139,66 +123,28 @@ button {
     font-size: 40px;
 }
 
-.conteudo-pagina {
-    width: 1000px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.caixa {
-    width: 300px;
-    background: white;
-    border: 2px solid #999;
-    padding: 15px;
-}
-
-.caixa.grande {
-    width: 460px;
-}
-
-.caixa.menor {
-    width: 300px;
-}
-
-.caixa h2,
-.caixa h3 {
-    margin-top: 0;
-    color: #222;
-}
-
-.caixa p {
-    color: #333;
-    line-height: 1.5;
-}
-
-.formulario {
-    width: 500px;
-    background: white;
-    border: 2px solid #999;
-    padding: 20px;
-}
-
-.formulario h2 {
-    margin-top: 0;
-}
-
-.formulario label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.formulario input,
-.formulario textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+.form-card .form-control {
     border: 1px solid #999;
-    background: #f4f4f4;
+    background: #f3f3f3;
 }
 
-.formulario textarea {
-    height: 120px;
+.btn-primary {
+    background: purple;
+    border: none;
+    border-radius: 0;
+    box-shadow: 3px 3px 0 #2b2b2b;
+}
+
+.btn-primary:hover {
+    background: #5a008a;
+}
+
+@media (max-width: 767.98px) {
+    .banner-principal {
+        text-align: center;
+    }
+
+    .banner-principal h1 {
+        font-size: 38px;
+    }
 }
