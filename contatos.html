@@ -4,55 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamezone - Contatos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="topo">
-        <div class="logo">
-            <span class="bolinha">G</span>
-            <span>Gamezone</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <span class="bolinha">G</span>
+                <span>Gamezone</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuSite" aria-controls="menuSite" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuSite">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contatos.html">Contatos</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quemsomos.html">Quem Somos</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
-        </ul>
-    </div>
+    <main class="container py-5">
+        <section class="titulo-pagina">
+            <h1>Contato</h1>
+        </section>
 
-    <div class="titulo-pagina">
-        <h1>Contato</h1>
-    </div>
+        <section class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="card box-texto h-100">
+                    <div class="card-body text-center">
+                        <span class="badge bg-success mb-2">WhatsApp</span>
+                        <h3>(11) 99999-0000</h3>
+                    </div>
+                </div>
+            </div>
 
-    <div class="conteudo-pagina">
-        <div class="caixa">
-            <h3>WhatsApp</h3>
-            <p>(11) 99999-0000</p>
-        </div>
+            <div class="col-md-4">
+                <div class="card box-texto h-100">
+                    <div class="card-body text-center">
+                        <span class="badge bg-primary mb-2">E-mail</span>
+                        <h3>contato@gamezone.com.br</h3>
+                    </div>
+                </div>
+            </div>
 
-        <div class="caixa">
-            <h3>E-mail</h3>
-            <p>contato@gamezone.com.br</p>
-        </div>
+            <div class="col-md-4">
+                <div class="card box-texto h-100">
+                    <div class="card-body text-center">
+                        <span class="badge bg-warning text-dark mb-2">Endereço</span>
+                        <h3>Rua das Games, 123</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="caixa">
-            <h3>Endereço</h3>
-            <p>Rua das Games, 123 - São Paulo/SP</p>
-        </div>
+        <section class="row mt-4 g-4">
+            <div class="col-lg-6">
+                <div class="card form-card">
+                    <div class="card-body">
+                        <h2>Envie uma mensagem</h2>
 
-        <div class="formulario">
-            <h2>Envie uma mensagem</h2>
-            <label>Nome</label>
-            <input type="text" placeholder="Seu nome">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input id="nome" type="text" class="form-control" placeholder="Seu nome" required>
+                            </div>
 
-            <label>E-mail</label>
-            <input type="email" placeholder="Seu e-mail">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input id="email" type="email" class="form-control" placeholder="Seu e-mail" required>
+                            </div>
 
-            <label>Mensagem</label>
-            <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea id="mensagem" class="form-control" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                            </div>
 
-            <button>Enviar</button>
-        </div>
-    </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card form-card h-100">
+                    <div class="card-body">
+                        <h2>Mapa</h2>
+                        <div class="ratio ratio-4x3 mt-3">
+                            <iframe src="https://www.google.com/maps?q=S%C3%A3o%20Paulo%2C%20SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Mapa de localização"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
